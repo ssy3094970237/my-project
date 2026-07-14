@@ -1,0 +1,63 @@
+{
+  "pages": [
+    "pages/first/first",
+    "pages/orders/orders",
+    "pages/mine/mine",
+    "pages/address/address",
+    "pages/car/car",
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/address/addAddress/addAddress",
+    "pages/address/editAddress/editAddress",
+    "pages/first/visit/visit",
+    "pages/goods/goods",
+    "pages/goods/expend/expend",
+    "pages/orders/card",
+    "pages/orders/service",
+    "pages/payorder"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "猫咪购物园",
+    "navigationBarBackgroundColor": "#93a07d",
+    "navigationStyle": "default",
+    "enablePullDownRefresh": true
+  },
+  "tabBar": {
+    "color": "#bfbfbf",
+    "selectedColor": "#000",
+    "backgroundColor": "#93a07d",
+    "borderStyle": "white",
+    "position": "bottom",
+    "list": [
+      {
+        "pagePath": "pages/first/first",
+        "text": "首页",
+        "iconPath": "/images/public-首页1.png",
+        "selectedIconPath": "/images/public-首页2.png"
+      },
+      {
+        "pagePath": "pages/goods/goods",
+        "text": "商品",
+        "iconPath": "/images/public-商品1.png",
+        "selectedIconPath": "/images/public-商品2.png"
+      },
+      {
+        "pagePath": "pages/car/car",
+        "text": "购物车",
+        "iconPath": "/images/public-购物车1.png",
+        "selectedIconPath": "/images/public-购物车2.png"
+      },
+      {
+        "pagePath": "pages/mine/mine",
+        "text": "我的",
+        "iconPath": "/images/public-我的1.png",
+        "selectedIconPath": "/images/public-我的2.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "componentFramework": "glass-easel",
+  "sitemapLocation": "sitemap.json",
+  "lazyCodeLoading": "requiredComponents"
+}
