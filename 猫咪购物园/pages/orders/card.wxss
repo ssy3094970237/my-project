@@ -1,0 +1,47 @@
+/*pages/orders/card.wxss*/
+page {
+  background-color: #f8f7f2;
+  padding: 40rpx;
+}
+.card-wrap {
+  width: 100%;
+}
+/* 头像 */
+.avatar-box {
+  display: flex;
+  justify-content: center;
+  margin: 60rpx 0 80rpx;
+}
+.avatar {
+  width: 180rpx;
+  height: 180rpx;
+  border-radius: 50%;
+  overflow: hidden;
+}
+/* 输入框表单 */
+.form-item {
+  display: flex;
+  align-items: center;
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 30rpx;
+  margin-bottom: 30rpx;
+}
+.label {
+  font-size: 32rpx;
+  width: 140rpx;
+  color: #333;
+}
+.input {
+  flex: 1;
+  font-size: 32rpx;
+  color: #666;
+}
+/* 保存按钮 */
+.save-btn {
+  margin-top: 60rpx;
+  background-color: #93a07d;
+  color: #fff;
+  border-radius: 16rpx;
+  font-size: 34rpx;
+}

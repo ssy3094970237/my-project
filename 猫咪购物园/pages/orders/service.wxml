@@ -1,0 +1,9 @@
+<!--pages/orders/service.wxml-->
+<view class="container">
+  <text class="title">在线客服</text>
+  <view class="tel-box">
+    <text>客服热线：123456789</text>
+    <button bindtap="callPhone">一键拨号</button>
+  </view>
+  <view class="tip">工作时间：9:00-21:00</view>
+</view>

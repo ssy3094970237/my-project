@@ -1,0 +1,22 @@
+page{
+  padding: 40rpx;
+}
+.pay-title{
+  font-size: 40rpx;
+  text-align: center;
+  margin: 60rpx 0;
+}
+.price-box{
+  font-size: 34rpx;
+  text-align: center;
+  margin-bottom: 80rpx;
+}
+.price{
+  color: #f44;
+  font-size: 44rpx;
+}
+.submit-pay{
+  background: #93a07d;
+  color: #fff;
+  font-size: 32rpx;
+}

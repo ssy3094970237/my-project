@@ -1,0 +1,22 @@
+<!--pages/address/address.wxml-->
+<!-- 地址列表 -->
+<view class="list" wx:for="{{addresses}}" wx:key="id">
+  <view class="list_left" ><text>{{item.name[0]}}</text></view>
+  <view class="list_middle">
+    <view class="name-phone">
+      <view class="name">{{item.name}}</view>
+      <view class="phone">{{item.phone}}</view>
+    </view>
+    <view class="address">{{item.region}}{{item.detail}}</view>
+  </view>
+  <view class="list_right" >
+    <image src="../../images/address-编辑.png" data-index="{{index}}" bindtap="onedit"/>
+    <image src="../../images/address-删除.png" data-index="{{index}}"  bindtap="ondelete"/>
+  </view>
+</view>
+
+
+<!-- 底部添加收货地址按钮 -->
+<view class="footer">
+<button bindtap="onadd" class="btn_add" style="width: 600rpx;">+添加收货地址</button>
+</view>

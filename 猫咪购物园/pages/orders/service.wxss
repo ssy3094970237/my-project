@@ -1,0 +1,33 @@
+/* pages/orders/service.wxss */
+page {
+  background: #f8f7f2;
+  padding: 60rpx 40rpx;
+}
+.title {
+  display: block;
+  font-size: 44rpx;
+  text-align: center;
+  margin-bottom: 100rpx;
+  color: #333;
+}
+.tel-box {
+  background: #fff;
+  border-radius: 16rpx;
+  padding: 40rpx;
+  text-align: center;
+}
+.tel-box text {
+  font-size: 34rpx;
+  display: block;
+  margin-bottom: 40rpx;
+}
+.tel-box button {
+  background: #93a07d;
+  color: #fff;
+}
+.tip {
+  margin-top: 60rpx;
+  text-align: center;
+  font-size: 28rpx;
+  color: #888;
+}

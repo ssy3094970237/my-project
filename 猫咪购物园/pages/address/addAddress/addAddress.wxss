@@ -1,0 +1,56 @@
+/* pages/address/addAddress/addAddress.wxss */
+page{
+  background-color: rgb(245, 245, 245);
+}
+.title{
+  background-color: #93a07d;
+  height: 170rpx;
+  display: flex;
+  justify-content: center;
+}
+.van-icon{
+  margin-top: 110rpx;
+  margin-left: -280rpx;
+}
+.title text{
+  margin-top: 100rpx;
+  font-size: 40rpx;
+  font-weight: 550;
+}
+.table{
+  background-color: #fff;
+  padding: 10rpx;
+  margin:20rpx;
+  width: 710rpx;
+}
+.name,.phone,.region,.detail,.default{
+  height: 100rpx;
+  margin-top: 10rpx;
+  border-bottom: 2rpx solid rgb(245, 245, 245);
+  display: flex;
+  align-items: center;
+}
+.region .count{
+  color: #777777;
+}
+.table .text{
+  width: 180rpx;
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  padding-left: 30rpx;
+  font-weight: 600;
+}
+
+.footer{
+  position: fixed;
+  bottom: 20px; 
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.footer button{
+  border-radius: 50rpx;
+  background-color: #93a07d;
+}
+/*底部保存地址代码结束 */

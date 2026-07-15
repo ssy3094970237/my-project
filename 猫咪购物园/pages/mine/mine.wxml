@@ -1,0 +1,93 @@
+<!--pages/mine/mine.wxml-->
+<!-- 头像、id栏代码开始 -->
+<view class="message_card">
+  <view class="message_card_img" bindtap="changeAvatar">
+    <!-- 绑定头像变量，点击触发换头像 -->
+    <image src="{{avatarUrl}}" class="img_touxiang"></image>
+  </view>
+  <view class="message_card_text">
+    <text>miao咪购</text>
+    <text>用户ID: {{userId}}</text>
+  </view>
+</view>
+<!-- 头像、id栏代码结束 -->
+
+<!-- 余额、积分、优惠券栏代码开始 -->
+<view class="yue">
+  <view class="yue_yue" > 
+    <text class="yue_yue_num">0</text>
+    <text>余额</text>
+  </view>
+  <view class="yue_jifen"> 
+    <text class="yue_yue_num">0</text>
+    <text>积分</text>
+  </view>
+  <view class="yue_youhui"> 
+    <text>优惠券</text>
+  </view>
+</view>
+<!-- 余额、积分、优惠券栏代码结束 -->
+
+<!-- 服务功能栏代码开始 -->
+<view class="fun">
+  <view class="fun_text"><text>服务功能</text></view>
+  <view class="fun1">
+    <!-- 资料卡 -->
+    <navigator url="../../pages/orders/card">
+      <view class="fun_mini">
+       <image src="../../images/mine-我的资料.png" />
+        <text>资料卡</text>
+      </view>
+    </navigator>
+    <!-- 地址 -->
+    <navigator url="../../pages/address/address">
+      <view class="fun_mini">
+        <image src="../../images/mine-地址.png" mode=""/>
+        <text>地址</text>
+      </view>
+    </navigator>
+    <!-- 订单 -->
+    <navigator url="../../pages/orders/orders">
+      <view class="fun_mini">
+        <image src="../../images/mine-我的订单.png" mode=""/>
+        <text>订单</text>
+      </view>
+    </navigator>
+    <!-- 客服 -->
+    <navigator url="../../pages/orders/service">
+      <view class="fun_mini">
+        <image src="../../images/mine-客服.png" mode=""/>
+        <text>客服</text>
+      </view>
+    </navigator>
+  </view>
+</view>
+
+<!-- 更多功能栏代码开始 -->
+<view class="more">
+  <view class="more_text"><text>更多功能</text></view>
+  <view class="more_list">
+    <image src="../../images/mine-关于我们.png" mode=""/>
+    <text>关于我们</text>
+    <image class="more_exit" src="../../images/mine-向右.png" mode=""/>
+  </view>
+  <view class="more_list">
+    <image src="../../images/mine-帮助中心.png" mode=""/>
+    <text>帮助中心</text>
+    <image class="more_exit" src="../../images/mine-向右.png" mode=""/>
+  </view>
+  <view class="more_list">
+    <image src="../../images/mine-商务合作.png" mode=""/>
+    <text>商务合作</text>
+    <image class="more_exit" src="../../images/mine-向右.png" mode=""/>
+  </view>
+  <view class="more_list">
+    <image src="../../images/mine-设置.png" mode=""/>
+    <text>设置</text>
+    <image class="more_exit" src="../../images/mine-向右.png" style="margin-left: 440rpx;"/>
+  </view>
+</view>
+<!-- 更多功能栏代码结束 -->
+
+<button>退出登录</button>
+<view class="daodi"></view>

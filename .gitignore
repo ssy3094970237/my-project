@@ -1,0 +1,6 @@
+node_modules/
+.DS_Store
+*.log
+project.private.config.json
+猫咪购物园/node_modules/
+猫咪购物园/project.private.config.json

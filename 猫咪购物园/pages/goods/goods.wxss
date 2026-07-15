@@ -1,0 +1,108 @@
+/* pages/goods/goods.wxss */
+page{
+  background-color: rgb(245, 245, 245);
+}
+
+.product{
+  display: flex;
+  flex-direction: row;
+  font-family: "Microsoft YaHei"
+}
+.left{
+  width: 25%;
+  font-size: 30rpx;
+  background-color: #cdd6bb;
+}
+.left view{
+  text-align: center;
+  height: 90rpx;
+  line-height: 90rpx;
+}
+.selected{
+  background-color: #cdd6bb;
+  border-left: 2px solid #93a07d;
+  font-weight: bold;
+  color: black;
+  border-bottom: 1px solid #f2f2f2;
+  font-size: 35rpx;
+}
+.normal{
+  background-color: #cdd6bb;
+  border-bottom: 1px solid #f2f2f2;
+}
+.right{
+  width:75%;
+  margin: 0;
+}
+swiper{
+  height: 700px;
+}
+.mini_title{
+  width: 200rpx;
+  margin: 10rpx;
+  background-color: #93a07d;
+  color: rgb(17, 14, 14);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10rpx;
+}
+.card{
+  height: 280rpx;
+  width: 540rpx;
+  margin-left: 10rpx;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-bottom: 2rpx solid rgba(128, 128, 128, 0.795);
+  margin-top: 10rpx;
+  border-radius: 20rpx;
+  box-shadow: 0 0 10rpx #93a07d;
+  background-color: #fff;
+}
+.card_top{
+  height: 50rpx;
+  width: 500rpx;
+  font-size: 30rpx;
+  margin-left: 20rpx;
+  margin-top: 10rpx;
+  color: #93a07d;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+}
+.card_main{
+  display: flex;
+  flex-direction: row;
+}
+.card image{
+  width: 170rpx;
+  height: 170rpx;
+}
+.card_img{
+  width: 160rpx;
+  height: 160rpx;
+}
+.card_middle{
+  width: 230rpx;
+  height: 180rpx;
+  margin-left: 10rpx;
+}
+.card_name{
+  font-size: 38rpx;
+  font-weight: 600;
+}
+.card_desc{
+  height: 40rpx;
+  font-size: 28rpx;
+  overflow: hidden;
+  color: grey;
+  font-family: "华文细黑";
+}
+.card_right{
+  height: 180rpx;
+  display: flex;
+  align-items: flex-end;
+  font-weight:600;
+  font-size: 35rpx;
+}

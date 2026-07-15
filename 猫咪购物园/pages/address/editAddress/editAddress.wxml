@@ -1,0 +1,33 @@
+<!--pages/address/editAddress/editAddress.wxml-->
+<view class="table">
+  <view class="name">
+    <view class="text">收货人</view>
+    <input value="{{editAddress.name}}" placeholder="请填写收货人姓名"/>
+    <icon type="clear"></icon>
+  </view>
+  <view class="phone">
+    <view class="text">联系电话</view>
+    <input value="{{editAddress.phone}}" placeholder="请填写收货人手机号码"/>
+    <icon type="clear"></icon>
+  </view>
+  <view class="region">
+    <view class="text">所在地区</view>
+    <view>
+      <picker mode="region" bindchange="bindRegionChange" value="{{region}}">
+        <text class="count" wx:if="{{region==''}}">省市区县、乡镇等</text>
+        <text wx:if="{{region!=''}}">{{region[0]}}{{region[1]}}{{region[2]}}</text>
+      </picker>
+    </view>
+  </view>
+  <view class="detail">
+    <view class="text">详细地址</view>
+    <input value="{{editAddress.detail}}" placeholder="街道、楼牌号等"/>
+  </view>
+  <view class="default">
+    <view class="text" style="width: 300rpx;">设置为默认地址</view>
+  </view>
+</view>
+
+<view class="footer">
+<button bindtap="confirmEdit" class="btn_add" style="width: 600rpx;">确认修改</button>
+</view>

@@ -1,0 +1,43 @@
+<!--pages/car/car.wxml-->
+<block wx:if="{{cartData.length > 0}}">
+  <view class="card" wx:for="{{cartData}}" wx:key="index">
+    <view class="card_top">{{item.shop}}<icon type="clear" bindtap="delete" data-index="{{index}}"/></view>
+    <view class="main">
+      <view class="card_img">
+        <image src="{{item.image}}" mode="aspectFill"/>
+      </view>
+      <view class="middle">
+        <view class="name">{{item.name}}</view>
+        <view class="desc">{{item.desc}}</view>
+      </view>
+      <view class="right">
+        <view class="num">×{{item.num}}</view>
+        <view class="price">￥{{item.price}}</view>
+      </view>
+    </view>
+  </view>
+  <view class="dao">到底啦~</view>
+
+  <!-- 底部结算栏 -->
+  <view class="cart-footer">
+    <label class="check-all">
+      <checkbox checked="{{isAllCheck}}" bindtap="toggleAllCheck" color="#93a07d"/>
+      <text>全选</text>
+    </label>
+    <view class="total-box">
+      <text>合计：</text>
+      <text class="total-price">￥{{totalMoney}}</text>
+    </view>
+    <button class="pay-btn" bindtap="goPay">去结算</button>
+  </view>
+</block>
+
+<block wx:else>
+  <view class="content">
+    <view class="hide"> 
+      <image src="../../images/car-购物车空.png"/>
+      <view class="text">您的购物车空空如也！</view>
+      <button bindtap="goGoods">去逛逛</button>
+    </view>
+  </view>
+</block>

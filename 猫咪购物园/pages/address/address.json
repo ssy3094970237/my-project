@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "van-icon": "vant-weapp/icon",
+    "van-search": "vant-weapp/search"
+  },
+  "navigationBarTitleText": "收货地址"
+}

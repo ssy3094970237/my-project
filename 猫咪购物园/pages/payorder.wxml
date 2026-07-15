@@ -1,0 +1,9 @@
+<!--pages/payorder/payorder.wxml-->
+<view class="pay-wrap">
+  <view class="pay-title">确认订单</view>
+  <view class="price-box">
+    <text>应付金额：</text>
+    <text class="price">￥{{price}}</text>
+  </view>
+  <button class="submit-pay" bindtap="submitPay">提交订单并支付</button>
+</view>

@@ -1,0 +1,41 @@
+/* pages/first/visit/visit.wxss */
+page{
+  background-color: rgb(245, 245, 245);
+}
+.text{
+  height: 100rpx;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: large;
+  font-weight: 600;
+}
+.form{
+  padding: 50rpx;
+  margin: 30rpx 30rpx;
+  box-shadow: 0 0 20rpx #93a07d;
+  border-radius: 20rpx;
+}
+.name,.phone,.shop,.date,.time{
+  height: 100rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 40rpx;
+  border-bottom: 1px solid #ccc;
+}
+.form_text{
+  width: 200rpx;
+  font-size: 40rpx;
+  font-family: '微软雅黑';
+  font-weight: 600;
+}
+.btn{
+  /* background-color: turquoise; */
+  margin-top: 100rpx;
+}
+button{
+  background-color: #fff;
+  border: 2px solid #93a07d;
+  border-radius: 50rpx;
+}

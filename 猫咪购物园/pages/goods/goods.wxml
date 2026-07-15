@@ -1,0 +1,69 @@
+<!--pages/goods/goods.wxml-->
+<!-- 搜索框代码开始 -->
+<van-search value="{{ value }}" placeholder="请输入搜索关键词" show-action
+  bind:search="onSearch" />
+<!-- 商品列表代码开始 -->
+<view class='product'>
+  <!-- 左侧 -->
+  <view class='left'>
+    <view class="{{active==0?'selected':'normal'}}" id="0" bindtap='switch'>猫猫罐头</view>
+    <view class="{{active==1?'selected':'normal'}}" id="1" bindtap='switch'>猫粮</view>
+    <view class="{{active==2?'selected':'normal'}}" id="2" bindtap='switch'>宠物零食</view>
+    <view class="{{active==3?'selected':'normal'}}" id="3" bindtap='switch'>宠物玩具</view>
+  </view>
+  <!-- 右侧 -->
+  <view class='right'>
+    <view class='type'>
+      <!-- current:当前所在滑块的 index -->
+      <!-- vertical:滑动方向是否为纵向 -->
+      <swiper current='{{currentTab}}' vertical='{{true}}'>
+        <!-- catchtouchmove 阻止弹窗后滚动穿透 -->
+        <swiper-item id="0" catchtouchmove="false">
+          <view class="mini_title">猫猫罐头</view>
+          <block wx:for="{{can}}" wx:for-item="item" id="0">
+            <template is="item" data="{{item: item}}"></template>
+          </block>
+        </swiper-item>
+        <swiper-item id="1" catchtouchmove="false">
+          <view class="mini_title">猫粮</view>
+          <block wx:for="{{food}}" wx:for-item="item" id="1">
+            <template is="item" data="{{item: item}}"></template>
+          </block>
+        </swiper-item>
+        <swiper-item id="2" catchtouchmove="false">
+          <view class="mini_title">宠物零食</view>
+          <block wx:for="{{snacks}}" wx:for-item="item" id="2">
+            <template is="item" data="{{item: item}}"></template>
+          </block>
+        </swiper-item>
+        <swiper-item id="3" catchtouchmove="false">
+          <view class="mini_title">宠物玩具</view>
+          <block wx:for="{{play}}" wx:for-item="item" id="3">
+            <template is="item" data="{{item: item}}"></template>
+          </block>
+        </swiper-item>
+      </swiper> 
+    </view>
+  </view>
+</view>
+<!-- 商品列表代码结束 -->
+
+
+<!-- 商品列表模板 -->
+<template name="item">
+  <view class="card" bindtap="goToDetail" data-item="{{item}}">
+    <view class="card_top">{{item.shop}}</view>
+    <view class="card_main">
+      <view class="card_img">
+        <image src="{{item.image}}" mode="aspectFill"></image>>
+      </view>
+      <view class="card_middle">
+        <view class="card_name">{{item.name}}</view>
+        <view class="card_desc">{{item.desc}}</view>
+      </view>
+      <view class="card_right">
+        <view>￥{{item.price}}</view>
+      </view>
+    </view>
+  </view>
+</template>

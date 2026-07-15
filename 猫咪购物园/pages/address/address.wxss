@@ -1,0 +1,95 @@
+/* pages/address/address.wxss */
+page{
+  background-color: rgb(245, 245, 245);
+}
+/* 顶部样式代码开始 */
+.title{
+  background-color: #93a07d;
+  height: 170rpx;
+  display: flex;
+  justify-content: center;
+}
+.van-icon{
+  margin-top: 110rpx;
+  margin-left: -280rpx;
+}
+.title text{
+  margin-top: 100rpx;
+  font-size: 40rpx;
+  font-weight: 550;
+}
+/* 顶部样式代码结束 */
+
+.list{
+  /* background-color: blueviolet; */
+  height: 150rpx;
+  width: 660rpx;
+  padding: 20rpx;
+  margin-top: 40rpx;
+  margin-left: 30rpx;
+  margin-right: 30rpx;
+  border-radius: 10rpx;
+  box-shadow:0 0 20rpx #93a07d;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  background-color: #fff;
+}
+.list_left{
+  width: 80rpx;
+  height: 80rpx;
+  border-radius: 50rpx;
+  background-color: #93a07d;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.list_middle{
+  margin-left: 10rpx;
+  width: 450rpx;
+  height: 160rpx;
+}
+.list_middle .name-phone{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.list_middle .name{
+  margin-right: 30rpx;
+  font-size: 40rpxs;
+  font-weight: 600;
+  margin-bottom: 20rpx;
+}
+.list_middle .phone{
+  margin-left: 10rpx;
+  color: rgb(136, 135, 135);
+  margin-bottom: 20rpx;
+}
+.list_middle .address{
+  height: 80rpx;
+  display: flex;
+  align-items: center;
+  font-size: 35rpx;
+}
+.list_right{
+  width: 130rpx;
+  height: 150rpx;
+  margin-left: 5rpx;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.list_right image{
+  width: 70rpx;
+  height: 70rpx;
+}
+.footer{
+  position: fixed;
+  bottom: 20px; /* 距离底部的距离 */
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.footer button{
+  background-color: #93a07d;
+}

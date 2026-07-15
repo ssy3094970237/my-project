@@ -1,0 +1,20 @@
+<!--pages/orders/card.wxml-->
+<view class="card-wrap">
+  <!-- 头像区域 -->
+  <view class="avatar-box">
+    <image src="../../images/mine-充值中心.png" class="avatar"></image>
+  </view>
+
+  <!-- 可编辑表单 -->
+  <view class="form-item">
+    <text class="label">昵称</text>
+    <input class="input" value="{{nickname}}" bindinput="inputNickname" placeholder="请输入昵称"/>
+  </view>
+  <view class="form-item">
+    <text class="label">用户ID</text>
+    <input class="input" value="{{userId}}" bindinput="inputUserId" placeholder="请输入ID"/>
+  </view>
+
+  <!-- 保存按钮 -->
+  <button class="save-btn" bindtap="saveInfo">保存修改</button>
+</view>

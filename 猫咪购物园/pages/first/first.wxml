@@ -1,0 +1,23 @@
+<!--pages/first/first.wxml-->
+<!-- 轮播图 -->
+<swiper class="swiper_wai" indicator-dots indicator-active-color="#fff" autoplay  current="0" interval="2000" duration="1000" circular  display-multiple-items="1" > 
+  <swiper-item class="swiper_nei" wx:for="{{swiper_image}}">
+    <image src="{{item}}"></image>
+  </swiper-item>
+</swiper>
+<!-- 猫咪用品选购 -->
+<button id="button0">
+<image id="img" src="../../images/first-猫粮.png"></image>猫咪用品选购
+</button>
+<!-- 四个主要按钮 -->
+<button id="button1" bindtap="goVisit"><image id="img1" src="../../images/first-电车.png" ></image>预约参观</button>
+<button id="button2" bindtap="goAddress"><image id="img1" src="../../images/first-汽车.png"></image>收货地址</button>
+<button id="button3" bindtap="goShopping"><image id="img1" src="../../images/first-洗护.png"></image>商品选购</button>
+<button id="button4" bindtap="goOrders"><image id="img1" src="../../images/first-我的订单.png"></image>我的订单</button>
+<!-- 积分商城 -->
+<button id="button5">积分商城<image id="img" src="../../images/first-积分商城.png"></image></button>
+<!-- 联系电话及微信 -->
+<view id="view1">      
+  <image id="img-view" src="../../images/first-电话.png"></image><text decode="{{true}}">1234567890&nbsp;&nbsp;&nbsp; </text>
+  <image id="img-view" src="../../images/first-微信.png"></image><text>8886668686</text>
+</view>

@@ -1,0 +1,126 @@
+<!--pages/orders/orders.wxml-->
+<van-tabs active="{{ active }}" bind:change="onChange" >
+  <!-- 未付款 -->
+  <van-tab title="未付款">
+    <view class="list">
+      <block wx:if="{{ nopay.length > 0 }}">
+        <view class="no" wx:for="{{nopay}}" wx:key="id">
+          <view class="shop">
+            <view class="dian">{{item.shop}}</view>
+            <view class="type">待付款</view>
+          </view>
+          <view class="main">
+            <view class="left">
+              <image src="{{item.url}}" mode="aspectFill"/>
+            </view>
+            <view class="middle">
+              <view class="name">{{item.name}}</view>
+              <view class="desc">{{item.desc}}</view>
+            </view>
+            <view class="right">
+              <view class="num">×{{item.num}}</view>
+              <view class="price">￥{{item.price}}</view>
+            </view>
+          </view>
+        </view>
+      </block>
+      <view class="fahuo" wx:else>
+        <image src="../../images/order-订单空.png" mode=""/>
+        <text>当前暂无订单</text>
+      </view>
+    </view>
+  </van-tab>
+
+  <!-- 已付款 -->
+  <van-tab title="已付款">
+    <view class="list">
+      <block wx:if="{{ payed.length > 0 }}">
+        <view class="no" wx:for="{{payed}}" wx:key="id">
+          <view class="shop">
+            <view class="dian">{{item.shop}}</view>
+            <view class="type">已付款</view>
+          </view>
+          <view class="main">
+            <view class="left">
+              <image src="{{item.url}}" mode="aspectFill"/>
+            </view>
+            <view class="middle">
+              <view class="name">{{item.name}}</view>
+              <view class="desc">{{item.desc}}</view>
+            </view>
+            <view class="right">
+              <view class="num">×{{item.num}}</view>
+              <view class="price">￥{{item.price}}</view>
+            </view>
+          </view>
+        </view>
+      </block>
+      <view class="fahuo" wx:else>
+        <image src="../../images/order-订单空.png" mode=""/>
+        <text>当前暂无订单</text>
+      </view>
+    </view>
+  </van-tab>
+
+  <!-- 已发货 -->
+  <van-tab title="已发货">
+    <view class="list">
+      <block wx:if="{{ send.length > 0 }}">
+        <view class="no" wx:for="{{send}}" wx:key="id">
+          <view class="shop">
+            <view class="dian">{{item.shop}}</view>
+            <view class="type">已发货</view>
+          </view>
+          <view class="main">
+            <view class="left">
+              <image src="{{item.url}}" mode="aspectFill"/>
+            </view>
+            <view class="middle">
+              <view class="name">{{item.name}}</view>
+              <view class="desc">{{item.desc}}</view>
+            </view>
+            <view class="right">
+              <view class="num">×{{item.num}}</view>
+              <view class="price">￥{{item.price}}</view>
+            </view>
+          </view>
+        </view>
+      </block>
+      <view class="fahuo" wx:else>
+        <image src="../../images/order-订单空.png" mode=""/>
+        <text>当前暂无订单</text>
+      </view>
+    </view>
+  </van-tab>
+
+  <!-- 已取消 -->
+  <van-tab title="已取消">
+    <view class="list">
+      <block wx:if="{{ cancel.length > 0 }}">
+        <view class="no" wx:for="{{cancel}}" wx:key="id">
+          <view class="shop">
+            <view class="dian">{{item.shop}}</view>
+            <view class="type">已取消</view>
+          </view>
+          <view class="main">
+            <view class="left">
+              <image src="{{item.url}}" mode="aspectFill"/>
+            </view>
+            <view class="middle">
+              <view class="name">{{item.name}}</view>
+              <view class="desc">{{item.desc}}</view>
+            </view>
+            <view class="right">
+              <view class="num">×{{item.num}}</view>
+              <view class="price">￥{{item.price}}</view>
+            </view>
+          </view>
+        </view>
+      </block>
+      <view class="fahuo" wx:else>
+        <image src="../../images/order-订单空.png" mode=""/>
+        <text>当前暂无订单</text>
+      </view>
+    </view>
+  </van-tab>
+</van-tabs>
