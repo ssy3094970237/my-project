@@ -1,6 +1,7 @@
 # 猫咪购物园 (Cat Shopping Park) - 微信小程序
 
 这是一个专为猫咪爱好者和宠物主人打造的猫咪用品展示、导购与购物模拟的微信小程序。项目提供了生动的产品分类展示、购物车管理、收货地址管理、订单模拟以及线下参观预约等功能。
+<img width="132" height="130" alt="image" src="https://github.com/user-attachments/assets/74a2b48c-1a55-4bca-aabe-12fd09d13fc6" />
 
 ---
 
